@@ -15,14 +15,14 @@ var street = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     maxZoom: 15,
     subdomains:['mt0','mt1','mt2','mt3']
 })
-var graycanvas =   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-	maxZoom: 16
+var graycanvas = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+	maxZoom: 20,
+	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 var baseMaps = {
     'Esri Satelite': esri,
-    'Esri WorldGrayCanvas': graycanvas,
+    'Stadia Maps': graycanvas,
     'Google Street': street,
     'Google Satelite': satelite,
     'Google Hybrid': hybrid
