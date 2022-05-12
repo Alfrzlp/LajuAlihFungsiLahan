@@ -22,7 +22,7 @@ var graycanvas = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/
 
 var baseMaps = {
     'Esri Satelite': esri,
-    'Stadia Maps': graycanvas,
+    'Stadia Maps ': graycanvas,
     'Google Street': street,
     'Google Satelite': satelite,
     'Google Hybrid': hybrid
